@@ -54,8 +54,6 @@ const initialState = {
         case ADD_COMMENT:
             const { postId } = action.payload;
             const { text } = action.payload.comment;
-            console.log('id', postId)
-            console.log('text', state)
             return state.map((post) =>
               post.id === postId
                 ? { ...post, comments: [...post.comments, { id: post.comments.length, text }] }

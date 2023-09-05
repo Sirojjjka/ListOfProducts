@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components/native";
 import {Dimensions} from 'react-native';
 
 const {width, height} = Dimensions.get('window');
@@ -18,7 +18,7 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: ${dw(17)}px;
+  font-size: ${dw(50)}px;
   font-weight: 700;
 `;
 

@@ -54,7 +54,6 @@ const FormCommponent = () => {
           .then(res => res.json())
           .then(json => {
             values.id = json?.id
-            console.log('aboba',values)
             createItem(values);
             navigation.navigate('Home');
             console.log('res', json);
